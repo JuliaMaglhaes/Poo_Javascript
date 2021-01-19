@@ -26,9 +26,9 @@ contaCorrenteJulia.depositar(200);
 const valorSacado = contaCorrenteJulia.sacar(50);
 
 const contaCorrente2 = new ContaCorrente();
-contaCorrente2.cliente = new Cliente();
-contaCorrente2.cliente.nome = "Nathan";
-contaCorrente2.cliente.cpf = "00000000000";
+contaCorrente2.cliente = cliente1;
+// contaCorrente2.cliente.nome = "Nathan";
+// contaCorrente2.cliente.cpf = "00000000000";
 contaCorrente2.agencia = 1001;
 
 let valor = 200;
