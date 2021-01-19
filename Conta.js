@@ -23,12 +23,17 @@ export class Conta{
 
     sacar(valor){
         let taxa = 1;
+        return this._sacar(valor, taxa);
+    };
+
+    _sacar(valor, taxa){
         const valorSacado = taxa * valor;
         if(this._saldo >= valorSacado){
             this._saldo -= valorSacado;
             return valorSacado; 
         }
-    };
+        return 0;
+    }
 
     depositar(valor){
         if (valor <= 0){
@@ -43,5 +48,10 @@ export class Conta{
         conta.depositar(valorSacado);
         conta.cidade = "Piraí";
         valor = 20;
+    }
+
+    teste(){
+        super.teste();
+        console.log("teste na conta");
     }
 }
