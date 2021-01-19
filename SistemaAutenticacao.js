@@ -1,5 +1,8 @@
+import{Cliente} from "./Cliente.js";
+
 export class SistemaAutenticacao{
     static login(autenticavel, senha){
+
         if(SistemaAutenticacao.ehAutenticavel(autenticavel)){
             return autenticavel.autenticar(senha);
         }
@@ -8,6 +11,6 @@ export class SistemaAutenticacao{
 
     static ehAutenticavel(autenticavel){
        return "autenticar" in autenticavel &&
-        autenticavel.autenticar instanceof Function
+        autenticavel.autenticar instanceof Function;
     }
 }
