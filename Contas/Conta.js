@@ -1,6 +1,10 @@
 export class Conta{
 
     constructor(saldoInicial, cliente, agencia){
+        if(this.constructor == Conta){
+            throw new Error ("Não pode instanciar um objeto do tipo conta");
+            
+        }
         this._saldo = saldoInicial;
         this._cliente = cliente;
         this._agencia = agencia;

@@ -5,8 +5,8 @@
 // no json por "type": "module",
 
 import{Cliente} from "./Cliente.js"
-import{ContaCorrente} from "./ContaCorrente.js"
-import{ContaPoupanca} from "./ContaPoupanca.js"
+import{ContaCorrente} from "./Contas/ContaCorrente.js"
+import{ContaPoupanca} from "./Contas/ContaPoupanca.js"
 
 const cliente1 = new Cliente("Júlia", "11111111111");
 const contaCorrenteJulia = new ContaCorrente(cliente1, 1001);
